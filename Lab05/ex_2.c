@@ -85,7 +85,6 @@ void combineArrayAndGiveResult (int arr1[], int arr2[], int length1, int length2
         printf ("%d, ", *(p + i));
     }
     medianOfSortedArray (p, length);
-    
 }
 
 //median of the sorted array
@@ -104,6 +103,5 @@ void medianOfSortedArray (int*p, int length)
     {
         median = ((*(p + position) + *(p + (position - 1)))/2.0);
         printf ("\nMedian is: %f", median);
-    }
-    
+    }  
 }
