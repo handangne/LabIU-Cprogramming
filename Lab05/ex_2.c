@@ -82,7 +82,7 @@ void combineArrayAndGiveResult (int arr1[], int arr2[], int length1, int length2
     printf ("New array: ");
     for (int i=0; i < length; i++)
     {
-        printf ("%d, ", *(p + i));
+        printf ("%d ", *(p + i));
     }
     medianOfSortedArray (p, length);
 }
