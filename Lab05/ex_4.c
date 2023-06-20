@@ -51,11 +51,11 @@ void sortDiagonals (int n, int arr[100][100])
         }
     }
     //2nd diagonal in decreasing order
-    for (int i = n - 1, j = 0; i >= 0, j <= n - 1 ; i--, j++)
+    for (int i = n - 1, j = 0; i > 0, j < n - 1; i--, j++)
     {
-        for (int a = n - 2, b = 1; a >= 0, b <= n ; a--, b++)
+        for (int a = i - 1, b = j + 1; a >= 0, b <= n - 1 ; a--, b++)
         {
-            if (arr[i][j] < arr[a][b]) 
+            if (arr[i][j] > arr[a][b]) 
             {
                 int temp = arr[i][j];
                 arr[i][j] = arr[a][b];
