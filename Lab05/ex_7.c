@@ -31,7 +31,7 @@ void largestIncreasing (int arr[1000], int n)
     int i=1, t=1;
     int inc = 1;
     int incm =0;
-    arr[n] = arr[n-1] - 1;
+    arr[n] = arr[n-1] - 1; //to stop the array that always increasing
     while(i<n)
     {
         while(arr[i] >= arr[i-1])
@@ -59,7 +59,7 @@ void largestDecreasing (int arr[1000], int n)
     int i=1, t=1;
     int dec=1;
     int decm=0;
-    arr[n]= arr[n-1] + 1;
+    arr[n]= arr[n-1] + 1; // to stop the array that always decreaseing
     while(i<n)
     {
         while(arr[i]<=arr[i-1])
