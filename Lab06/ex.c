@@ -12,7 +12,6 @@ void fillArray (int, int*);
 void sortArray (int, int*);
 void printfArray (int, int*);
 
-
 int main ()
 {
     int x, y, z;
@@ -35,7 +34,6 @@ int main ()
     return 0;
 }
 
-
 void ex1 (int x, int*p, int y, int*q)
 {
     x = 2;
@@ -46,10 +44,10 @@ void ex1 (int x, int*p, int y, int*q)
     printf ("(2)The value of x: %d\n", x);
     printf ("(3)The value of p: %p\n", p); //address of x
     printf ("(4)The value of *p: %d\n", *p); //value of x
-    printf ("(5)The address of x: %p\n", q);
-    printf ("(6)The value of x: %d\n", y);
-    printf ("(7)The value of p: %p\n", q); //address of y
-    printf ("(8)The value of *p: %d\n", *q); //value of y
+    printf ("(5)The address of y: %p\n", q);
+    printf ("(6)The value of y: %d\n", y);
+    printf ("(7)The value of q: %p\n", q); //address of y
+    printf ("(8)The value of *q: %d\n", *q); //value of y
     printf ("(9)The address of p: %p\n", &p);
     printf ("(10)The address of q: %p\n", &q);
 }
@@ -65,8 +63,8 @@ void ex2 (int x, int*p, int y, int*q, int z, int*r)
     swapValues (q, r);
     printf ("(3):\n");
     printf ("The values of x, y, z, p, q, r, *p, *q, *r respectively:\n%d, %d, %d, %p, %p, %p, %d, %d, %d\n", x, y, z, p, q, r, *p, *q, *r);
-
 }
+
 void swapValues (int*a, int*b)
 {
     int temp = *a;
@@ -130,8 +128,6 @@ void ex4 (int n, int*p)
     printf ("\nSorted Array: ");
     sortArray (m, p);
     printfArray (m, p);
-
-    
 }
 
 void fillArray (int n, int*p) //with random values
@@ -164,8 +160,6 @@ void sortArray (int n, int*p)
             }
         }
     }
-
-    
 }
 
 void printfArray (int n, int*p)
@@ -175,4 +169,3 @@ void printfArray (int n, int*p)
         printf ("%d ", *(p+i));
     }
 }
-
