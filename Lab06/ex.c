@@ -7,7 +7,7 @@ void ex2 (int, int*, int, int*, int, int*);
 void swapValues (int*, int*);
 void swapPointers (int**, int**, int**);
 void ex3 (int, int*, int, int*, int, int*);
-void ex4 (int, int*);
+int ex4 (int, int*);
 void fillArray (int, int*);
 void sortArray (int, int*);
 void printfArray (int, int*);
@@ -92,7 +92,7 @@ void swapPointers (int**a, int**b, int**c)
     *c = temp;
 }
 
-void ex4 (int n, int*p)
+int ex4 (int n, int*p)
 {
     printf ("The number of values of your array: ");
     scanf ("%d", &n);
@@ -128,6 +128,8 @@ void ex4 (int n, int*p)
     printf ("\nSorted Array: ");
     sortArray (m, p);
     printfArray (m, p);
+
+    free (p);
 }
 
 void fillArray (int n, int*p) //with random values
