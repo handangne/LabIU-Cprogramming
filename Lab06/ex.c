@@ -130,6 +130,7 @@ int ex4 (int n, int*p)
     printfArray (m, p);
 
     free (p);
+    return 0;
 }
 
 void fillArray (int n, int*p) //with random values
