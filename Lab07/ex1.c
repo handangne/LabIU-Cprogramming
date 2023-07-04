@@ -49,8 +49,8 @@ void longestCommonPrefix (char arr[][100], int n, char result[])
                 result[index] = '\0';
                 return ;
             }
-        result[index++] = current;
         }
+        result[index++] = current;
     }
     result[index] = '\0';
 }
